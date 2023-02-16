@@ -88,9 +88,9 @@ img{
     justify-content: center;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (min-width: 290px) {
     .container {
-        width: 300px;
+        width: 70%;
         height: 300px;
         background-color: rgb(255, 255, 255);
         border: 10px solid rgb(46, 31, 71);
