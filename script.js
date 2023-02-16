@@ -40,6 +40,10 @@ const quotes = [
     quote:
       '"You can never cross the ocean until you have the courage to lose sight of the shore."',
   },
+  {
+    author: "- Khasan Zugairaev",
+    quote: '"So bid bu !"',
+  },
 ];
 
 const btn = document.querySelector("#btn-gen");
@@ -52,8 +56,11 @@ const generatorByDefault = () => {
   const defaultQuotesMap = quotes.map((el) => el.quote);
   const defaultAuthorsMap = quotes.map((el) => el.author);
 
-  quote.innerHTML = defaultQuotesMap[randomByDefault];
-  author.innerHTML = defaultAuthorsMap[randomByDefault];
+  // quote.innerHTML = defaultQuotesMap[randomByDefault];
+  // author.innerHTML = defaultAuthorsMap[randomByDefault];
+
+  quote.innerHTML = '"So bid bu !"'
+  author.innerHTML = "- Khasan Zugairaev"
 };
 generatorByDefault();
 
