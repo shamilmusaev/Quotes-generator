@@ -88,7 +88,7 @@ img{
     justify-content: center;
 }
 
-@media screen and (min-width: 290px) {
+@media screen and (max-width: 290px) {
     .container {
         width: 70%;
         height: 300px;
