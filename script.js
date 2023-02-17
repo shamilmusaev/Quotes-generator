@@ -46,28 +46,32 @@ const quotes = [
   },
 ];
 
+
+
 const btn = document.querySelector("#btn-gen");
 const quote = document.querySelector(".quote-container");
 const author = document.querySelector(".author-container");
+const listDB = document.querySelector(".listDB");
 
-const generatorByDefault = () => {
+
+
+ function generatorByDefault () {
   const randomByDefault = Math.floor(Math.random() * quotes.length);
 
   const defaultQuotesMap = quotes.map((el) => el.quote);
   const defaultAuthorsMap = quotes.map((el) => el.author);
 
-  // quote.innerHTML = defaultQuotesMap[randomByDefault];
-  // author.innerHTML = defaultAuthorsMap[randomByDefault];
+  quote.innerHTML = defaultQuotesMap[randomByDefault];
+  author.innerHTML = defaultAuthorsMap[randomByDefault];
 
-  quote.innerHTML = '"So bid bu !"'
-  author.innerHTML = "- Khasan Zugairaev"
+  
 };
 generatorByDefault();
 
 
 
 
-const generatorOnClick = () => {
+ const generatorOnClick = () => {
   const random = Math.floor(Math.random() * quotes.length);
 
   const quotesMap = quotes.map((quot) => {
@@ -83,3 +87,11 @@ const generatorOnClick = () => {
 
 
 btn.addEventListener("click", generatorOnClick);
+
+
+const db = quotes.map(elem => {
+  return elem.quote 
+})
+
+listDB.innerHTML = db
+

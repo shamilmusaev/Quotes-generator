@@ -21,11 +21,16 @@ p{
     
 }
 
-.parent-container{
+.quotes-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 600px;
+}
+
+.db-container{
+    
     height: 600px;
 }
 
@@ -49,17 +54,16 @@ p{
     justify-content: center;
 }
 
-ul{
+.nav-ul{
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-li{
+.nav-li{
     
     list-style: none;
-    
-    
+
 }
 
 a{
@@ -87,6 +91,20 @@ img{
     display: flex;
     justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 290px) {
     .container {
